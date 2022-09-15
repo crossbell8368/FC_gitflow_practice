@@ -11,3 +11,14 @@
 
 2는 처음 1과 그다음의 1을 합쳐서 계산되며, 3 역시 1과 2의 합으로 계산되는 방식
 
+
+# Fibonacci number recursive function (python) 
+
+def fibo(num):
+    if num == 0:
+        return 0
+    elif num == 1 or num == 2:
+        return 1
+    else:
+        return fibo(num - 1) + fibo(num - 2)
+
